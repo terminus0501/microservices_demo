@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes: # 用来配置网关路由规则
+        - id: employee_route
+          uri: lb://EMPLOYESS
+          predicates:
+            - Path=/ems/employee/**
+          filters:
+            - StripPrefix=1
+
+        - id: department_route
+          uri: lb://DEPARTMENTS
+          predicates:
+            - Path=/ems/department/**
+          filters:
+            - StripPrefix=1

@@ -1,0 +1,6 @@
+com\ylc\emsdepartments\EmsDepartmentsApplication.class
+com\ylc\emsdepartments\feign\EmployeeClient.class
+com\ylc\emsdepartments\service\impl\DepartmentServiceImpl.class
+com\ylc\emsdepartments\dao\DepartmentDao.class
+com\ylc\emsdepartments\controller\DepartmentController.class
+com\ylc\emsdepartments\service\DepartmentService.class
